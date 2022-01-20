@@ -1,0 +1,18 @@
+ARG NODE_VERSION=16
+ARG ALPINE_VERSION=3.14
+
+FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION}
+
+WORKDIR /usr/src/app
+
+COPY yarn.lock package.json ./
+COPY packages/eslint-config packages/eslint-config/
+COPY packages/front packages/front/
+
+RUN yarn install --pure-lockfile
+
+WORKDIR /usr/src/app/packages/front
+
+EXPOSE 3000
+
+CMD ["yarn", "dev"]
