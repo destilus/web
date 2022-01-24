@@ -8,7 +8,8 @@
     ]
   },
   "scripts": {
-    "start": "yarn workspace @repo/web run dev"
+    "start": "yarn workspace @repo/web run dev",
+    "docker:front:serve:dev": "docker-compose -f docker-compose.dev.yml up"
   },
   "main": "index.js",
   "license": "MIT",

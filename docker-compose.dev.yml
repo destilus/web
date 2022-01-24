@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  develop:
+    container_name: front-development
+    ports:
+      - 3000:3000
+    build:
+      context: .
+      dockerfile: ./packages/front/Dockerfile.dev
+    volumes:
+      - ./packages/front:/usr/src/app/packages/front
+      - /usr/src/app/node_modules
