@@ -1,5 +1,5 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@destilus/eslint-config",
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "license": "MIT",
@@ -19,5 +19,5 @@
     "prettier": "2.3.0",
     "tslint-config-prettier": "1.18.0"
   },
-  "gitHead": "2d0af4a7b7b1534bc1432ae28e0e2c9c75b0de81"
+  "gitHead": "576973ebf6cea7e578bb76fed964bf8c67dc4bff"
 }
