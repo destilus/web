@@ -3,11 +3,10 @@
     "incremental": true,
     "outDir": "./dist",
     "baseUrl": ".",
-    "rootDir": "/packages",
+    "rootDir": "./packages",
     "moduleResolution": "Node",
-    "exclude": ["node_modules"],
     "module": "CommonJS",
-    "target": "ES2018",
+    "target": "ES2019",
     "sourceMap": true,
     "lib": ["esnext"],
     "esModuleInterop": true,
@@ -17,6 +16,10 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
-    "resolveJsonModule": true
-  }
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+  },
+  "include": ["./packages"],
+  "exclude": ["node_modules"]
 }

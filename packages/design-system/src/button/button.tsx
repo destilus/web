@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonComponent, ButtonContainer } from 'button/button.styles'
+import { ButtonComponent, ButtonContainer } from './button.styles'
 
 export type ButtonProps = {
   children: React.ReactNode

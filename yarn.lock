@@ -968,7 +968,7 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==
 
-"@linaria/babel-preset@^3.0.0-beta.15":
+"@linaria/babel-preset@3.0.0-beta.15", "@linaria/babel-preset@^3.0.0-beta.15":
   version "3.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@linaria/babel-preset/-/babel-preset-3.0.0-beta.15.tgz#d8bd3d00d1f8b51209054fe04b0245a94c6f606c"
   integrity sha512-oJIyUn2SCIH4vW1vBxOsN2BTU6Y0mq4ywkqxwQ1py4HgtEnYlvpq4Ca0ba7vXvMWk1pMCgd/V+VpMjbr19uXgQ==
@@ -983,7 +983,7 @@
     source-map "^0.7.3"
     stylis "^3.5.4"
 
-"@linaria/core@^3.0.0-beta.15":
+"@linaria/core@3.0.0-beta.15", "@linaria/core@^3.0.0-beta.15":
   version "3.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@linaria/core/-/core-3.0.0-beta.15.tgz#570fab9430e5b4f2677fbb4eaeda66c041030f08"
   integrity sha512-9sqPCcWIlA1zTck45uNGqrjtnWj5HGa7Lxbaw1ZsCcm6K6WcMVyOqW3OQkMBHuf3OzC50Mzb8z7d7d6Rpg8uFw==
@@ -1005,7 +1005,7 @@
   dependencies:
     "@linaria/babel-preset" "^3.0.0-beta.15"
 
-"@linaria/react@^3.0.0-beta.15":
+"@linaria/react@3.0.0-beta.15", "@linaria/react@^3.0.0-beta.15":
   version "3.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@linaria/react/-/react-3.0.0-beta.15.tgz#dbd3d17dc6429d7ba46da492992547ce8ed8da39"
   integrity sha512-1s/4DM+kAg3AdfAiK8vu6NBe3v+il7C3JjD0GBTUkZBJDOQ/4Vm543+PhlyL9t3tmmu9Xxg+in7PFNr7ODCTTQ==
@@ -1013,7 +1013,7 @@
     "@emotion/is-prop-valid" "^0.8.8"
     "@linaria/core" "^3.0.0-beta.15"
 
-"@linaria/shaker@^3.0.0-beta.15":
+"@linaria/shaker@3.0.0-beta.15", "@linaria/shaker@^3.0.0-beta.15":
   version "3.0.0-beta.15"
   resolved "https://registry.yarnpkg.com/@linaria/shaker/-/shaker-3.0.0-beta.15.tgz#8f4835ffe0185afbd14a17dcf4fb6ca042331250"
   integrity sha512-+PZRf8hM7fO4RiNpVVYUhIXQPPKYxowXYMaiILq/9zGcy2tQ6onqsKaQ71SCXvVrL+gVo6A/R13njOCJRZRTew==
@@ -1173,12 +1173,24 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.8.tgz#50d680c8a8a78fe30abe6906453b21ad8ab0ad7b"
   integrity sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==
 
+"@types/node@15.12.2":
+  version "15.12.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
+  integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
+
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react@17.0.38":
+"@types/react-dom@^17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@17.0.38":
   version "17.0.38"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
   integrity sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==
@@ -3354,7 +3366,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-linaria@^0.11.0:
+next-linaria@0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/next-linaria/-/next-linaria-0.11.0.tgz#dc7da2e2c348c8548d003f571905ef1845f32282"
   integrity sha512-JoVY9gF8d8NXRWfGMCIqh1m0uLvFV7wQA2kz8mzU4diHe3/VuNuXXwnogJOK9JMvhK1RD36/0eKiCbbeGI2mTw==

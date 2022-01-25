@@ -1,9 +1,10 @@
 {
   "name": "@repo/design-system",
-  "private": true,
   "version": "0.0.1",
+  "main": "dist",
+  "types": "dist",
   "scripts": {
-    "start": ""
+    "build": " yarn tsc --build --force"
   },
   "dependencies": {
     "@linaria/babel-preset": "^3.0.0-beta.15",
