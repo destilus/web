@@ -1,23 +1,20 @@
 {
   "compilerOptions": {
-    "incremental": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "rootDir": "/packages",
-    "moduleResolution": "Node",
-    "module": "CommonJS",
-    "target": "ES2018",
-    "sourceMap": true,
-    "lib": [
-      "esnext"
-    ],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
     "esModuleInterop": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-  }
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
