@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 
-import Button from '@destilus/design-system/button'
+import Button from '@destilus/design-system'
 
 const Home: NextPage = () => {
   return (
