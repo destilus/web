@@ -1,0 +1,46 @@
+Arguments: 
+  /home/samuelpetroline/.asdf/installs/nodejs/16.13.1/bin/node /home/samuelpetroline/.asdf/installs/nodejs/16.13.1/.npm/bin/yarn
+
+PATH: 
+  /home/samuelpetroline/.asdf/plugins/nodejs/shims:/home/samuelpetroline/.asdf/installs/nodejs/16.13.1/.npm/bin:/home/samuelpetroline/.asdf/installs/nodejs/16.13.1/bin:/home/samuelpetroline/.asdf/shims:/home/samuelpetroline/.asdf/bin:/home/samuelpetroline/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Samuel Petroline/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Samuel Petroline/AppData/Local/Programs/Microsoft VS Code/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, scandir '/home/samuelpetroline/projects/nfdev/web/packages/front/node_modules/@types'
+
+npm manifest: 
+  {
+    "name": "web",
+    "version": "0.0.1",
+    "private": true,
+    "workspaces": {
+      "packages": [
+        "packages/*"
+      ]
+    },
+    "scripts": {
+      "start": "yarn workspace @local/front run dev",
+      "docker:front:serve:dev": "docker-compose -f docker-compose.dev.yml up"
+    },
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+      "@local/eslint-config": "*",
+      "@types/node": "17.0.8",
+      "typescript": "4.5.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

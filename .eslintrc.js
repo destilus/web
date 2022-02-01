@@ -1,3 +1,3 @@
-const config = require('@destilus/eslint-config')
+const config = require('@local/eslint-config')
 
 module.exports = config
