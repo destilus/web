@@ -8,10 +8,9 @@
     "moduleResolution": "Node",
     "module": "CommonJS",
     "declaration": true,
-    "target": "ES2018",
     "sourceMap": true,
     "lib": ["esnext"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "alwaysStrict": true,
     "strictNullChecks": true,
@@ -20,9 +19,8 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "resolveJsonModule": true,
-    "composite": true,
-    "jsx": "preserve"
+    "composite": true
   },
-  "include": ["src/**/*"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }

@@ -1,27 +1,28 @@
 {
-  "name": "@destilus/design-system",
-  "version": "0.0.3-alpha.0",
-  "main": "dist",
-  "types": "dist",
+  "name": "@local/design-system",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./src/index",
+  "types": "./src/index",
   "scripts": {
+    "watch": "tsc-watch ./src/index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
     "build": " yarn tsc --build --force"
   },
-  "publishConfig": {
-    "access": "public"
+  "resolutions": {
+    "styled-components": "^5"
   },
   "dependencies": {
-    "@linaria/babel-preset": "^3.0.0-beta.15",
-    "@linaria/core": "^3.0.0-beta.15",
-    "@linaria/react": "^3.0.0-beta.15",
-    "@linaria/shaker": "^3.0.0-beta.15",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@destilus/eslint-config": "^1.0.0",
+    "@local/eslint-config": "1.0.0",
     "@types/react": "17.0.38",
+    "@types/styled-components": "^5.1.21",
+    "babel-plugin-styled-components": "2.0.2",
     "eslint-config-next": "12.0.7",
-    "eslint-plugin-react": "7.24.0"
-  },
-  "gitHead": "5377f947c90c6e513dc429cf541801d98efa52e8"
+    "eslint-plugin-react": "7.24.0",
+    "tsc-watch": "4.6.0"
+  }
 }
