@@ -2,25 +2,27 @@
   "name": "@local/design-system",
   "version": "0.0.1",
   "private": true,
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "./src/index",
+  "types": "./src/index",
   "scripts": {
+    "watch": "tsc-watch ./src/index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
     "build": " yarn tsc --build --force"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "dependencies": {
-    "@linaria/core": "3.0.0-beta.15",
-    "@linaria/react": "3.0.0-beta.15",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "7.16.12",
-    "@babel/preset-env": "7.16.11",
     "@local/eslint-config": "1.0.0",
-    "@linaria/babel-preset": "3.0.0-beta.15",
-    "@linaria/shaker": "3.0.0-beta.15",
     "@types/react": "17.0.38",
+    "@types/styled-components": "^5.1.21",
+    "babel-plugin-styled-components": "2.0.2",
     "eslint-config-next": "12.0.7",
-    "eslint-plugin-react": "7.24.0"
+    "eslint-plugin-react": "7.24.0",
+    "tsc-watch": "4.6.0"
   }
 }

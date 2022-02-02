@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": ".",
     "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -16,14 +15,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "composite": true,
     "types": []
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
-  "references": [
-    {
-      "path": "../../packages/design-system"
-    }
-  ]
+  "exclude": ["node_modules"]
 }
