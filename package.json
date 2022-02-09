@@ -1,38 +1,25 @@
 {
-  "name": "@repo/web",
-  "private": true,
+  "name": "web",
   "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "yarn run build && concurrently \"yarn run start:front\" \"yarn run start:watcher\"",
+    "start:front": "yarn workspace @local/front run dev",
+    "start:watcher": "yarn workspace @local/design-system run watch",
+    "build": "yarn workspace @local/design-system run build",
+    "docker:front:serve:dev": "docker-compose -f docker-compose.dev.yml up"
   },
-  "dependencies": {
-    "@linaria/babel-preset": "^3.0.0-beta.15",
-    "@linaria/core": "^3.0.0-beta.15",
-    "@linaria/react": "^3.0.0-beta.15",
-    "@linaria/shaker": "^3.0.0-beta.15",
-    "next": "12.0.7",
-    "next-linaria": "^0.11.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
+  "license": "MIT",
   "devDependencies": {
-    "@types/react": "17.0.38",
-    "@typescript-eslint/eslint-plugin": "4.26.0",
-    "@typescript-eslint/parser": "4.26.0",
-    "eslint": "7.27.0",
-    "eslint-config-next": "12.0.7",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-import-resolver-typescript": "2.4.0",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-promise": "5.1.0",
-    "eslint-plugin-react": "7.24.0",
-    "prettier": "2.3.0",
-    "tslint-config-prettier": "1.18.0",
-    "typescript": "^4.5.5"
+    "@types/node": "17.0.8",
+    "concurrently": "7.0.0",
+    "@local/eslint-config": "1.0.0",
+    "typescript": "4.5.4"
   }
 }
