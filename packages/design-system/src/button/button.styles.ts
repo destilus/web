@@ -4,4 +4,5 @@ export const ButtonContainer = styled.div`
   display: flex;
 `
 
-export const ButtonComponent = styled.button``
+export const ButtonComponent = styled.button`
+`

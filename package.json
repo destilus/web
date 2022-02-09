@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn run build && concurrently \"yarn run start:front\" \"yarn run start:watcher\"",
+    "start": "yarn run start:front",
     "start:front": "yarn workspace @local/front run dev",
     "start:watcher": "yarn workspace @local/design-system run watch",
     "build": "yarn workspace @local/design-system run build",
