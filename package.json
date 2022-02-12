@@ -1,20 +1,25 @@
 {
   "name": "web",
   "version": "0.0.1",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
-  "scripts": {
-    "start": "yarn workspace @repo/web run dev"
-  },
   "main": "index.js",
+  "private": true,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn run build && concurrently \"yarn run start:front\" \"yarn run start:watcher\"",
+    "start:front": "yarn workspace @local/front run dev",
+    "start:watcher": "yarn workspace @local/design-system run watch",
+    "build": "yarn workspace @local/design-system run build",
+    "docker:front:serve:dev": "docker-compose -f docker-compose.dev.yml up"
+  },
   "license": "MIT",
   "devDependencies": {
-    "@repo/eslint-config": "*",
     "@types/node": "17.0.8",
+    "concurrently": "7.0.0",
+    "@local/eslint-config": "1.0.0",
     "typescript": "4.5.4"
   }
 }

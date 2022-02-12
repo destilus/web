@@ -1,7 +1,13 @@
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
+
+import Button from '@local/design-system'
 
 const Home: NextPage = () => {
-  return <div></div>
+  return (
+    <div>
+      <Button>Teste</Button>
+    </div>
+  )
 }
 
 export default Home

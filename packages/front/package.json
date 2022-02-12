@@ -1,7 +1,7 @@
 {
-  "name": "@repo/web",
-  "private": true,
+  "name": "@local/front",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,19 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@linaria/babel-preset": "^3.0.0-beta.15",
     "@linaria/core": "^3.0.0-beta.15",
     "@linaria/react": "^3.0.0-beta.15",
-    "@linaria/shaker": "^3.0.0-beta.15",
+    "linaria": "^2.3.1",
     "next": "12.0.7",
-    "next-linaria": "^0.11.0",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@types/react": "17.0.38",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@linaria/babel-preset": "^3.0.0-beta.15",
+    "@linaria/shaker": "^3.0.0-beta.15",
+    "@linaria/webpack-loader": "^3.0.0-beta.16",
+    "@types/node": "15.12.2",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "eslint-config-next": "12.0.7",
-    "eslint-plugin-react": "7.24.0"
+    "eslint-plugin-react": "7.24.0",
+    "next-linaria": "1.0.0-beta"
   }
 }

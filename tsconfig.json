@@ -1,23 +1,11 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "incremental": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "rootDir": "/packages",
-    "moduleResolution": "Node",
-    "module": "CommonJS",
-    "target": "ES2018",
-    "sourceMap": true,
-    "lib": [
-      "esnext"
-    ],
-    "esModuleInterop": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "resolveJsonModule": true,
+    "paths": {
+      "*": ["node_modules/*"],
+      "@local/design-system": ["./packages/design-system"],
+      "@local/front": ["./packages/front"],
+      "@local/eslint-config": ["./packages/eslint-config"]
+    }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "declaration": true,
+    "sourceMap": true,
+    "lib": ["esnext"],
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "composite": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
+}
