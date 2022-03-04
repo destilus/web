@@ -15,11 +15,3 @@ export const BaseText = styled.span<TextProps>`
   `}
 `
 
-export const Heading = styled.h1<TextProps>`
-  ${(props) => css`
-    font-family: ${props.fontFamily};
-    font-size: ${props.fontSize};
-    font-weight: ${props.fontWeight};
-    line-height: ${props.lineHeight};
-  `}
-`

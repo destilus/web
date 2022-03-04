@@ -22,9 +22,9 @@ const Home: NextPage = () => {
           size="large"
           source="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
         />
-        {/* <Typography.Heading>Title</Typography.Heading> */}
+        <Typography.Heading>Title</Typography.Heading>
         <Typography.Text>Teste</Typography.Text>
-        <Typography.Text color="red.50" fontSize="2rem">
+        <Typography.Text color="red.500" fontSize="2rem">
           em vermelho
         </Typography.Text>
       </ThemeProvider>

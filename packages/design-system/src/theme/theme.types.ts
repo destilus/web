@@ -7,6 +7,7 @@ export type TypographyTokens = {
   lineHeight: string | number
   fontSize: string | number
   fontWeight: string | number
+  color: string
 }
 
 export type Typography = {

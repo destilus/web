@@ -7,12 +7,14 @@ export const theme: ThemeType = {
       fontSize: '1rem',
       fontWeight: '',
       lineHeight: '',
+      color: 'black',
     },
     heading: {
       fontFamily: 'Comic Sans',
       fontSize: '1rem',
       fontWeight: '',
       lineHeight: '',
+      color: 'black',
     },
   },
   colors: {

@@ -12,11 +12,11 @@ type TypographyProps = Partial<TextProps> &
 export function Text(props: TypographyProps) {
   const defaultStyle = useTypography('body', props)
 
-  return <BaseText {...defaultStyle} {...props} />
+  return <BaseText {...props} {...defaultStyle} />
 }
 
 export function Heading(props: TypographyProps) {
   const defaultStyle = useTypography('heading', props)
 
-  return <Heading {...defaultStyle} {...props} />
+  return <BaseText as="h1" {...props} {...defaultStyle} />
 }

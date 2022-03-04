@@ -5,6 +5,7 @@ export type TextProps = {
   lineHeight: string | number
   fontSize: string | number
   fontWeight: string | number
+  color?: string
 }
 
-export type CommonProps = ColorProps & SpaceProps & LayoutProps
+export type CommonProps = Omit<ColorProps, 'color'> & SpaceProps & LayoutProps
